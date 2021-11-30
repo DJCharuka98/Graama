@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E90A879A-EAA2-4245-93AF-C5E15CDE942E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>graama1</RootNamespace>
+    <AssemblyName>graama1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cert.Designer.cs">
+      <DependentUpon>cert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15.Designer.cs">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ad.Designer.cs">
+      <DependentUpon>Form_Ad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="graamaDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>graamaDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mahapola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mahapola.Designer.cs">
+      <DependentUpon>mahapola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="samurdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="samurdi.Designer.cs">
+      <DependentUpon>samurdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash_screen.Designer.cs">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="cert.resx">
+      <DependentUpon>cert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="certReport.rdlc" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15.resx">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Ad.resx">
+      <DependentUpon>Form_Ad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mahapola.resx">
+      <DependentUpon>mahapola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MahapolaReport.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="res.rdlc" />
+    <EmbeddedResource Include="samurdi.resx">
+      <DependentUpon>samurdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SamurdiReport.rdlc" />
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="graamaDataSet.xsc">
+      <DependentUpon>graamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet.xss">
+      <DependentUpon>graamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet1.xsc">
+      <DependentUpon>graamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet1.xss">
+      <DependentUpon>graamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet10.xsc">
+      <DependentUpon>graamaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet10.xss">
+      <DependentUpon>graamaDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet11.xsc">
+      <DependentUpon>graamaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet11.xss">
+      <DependentUpon>graamaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet12.xsc">
+      <DependentUpon>graamaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet12.xss">
+      <DependentUpon>graamaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet13.xsc">
+      <DependentUpon>graamaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet13.xss">
+      <DependentUpon>graamaDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet14.xsc">
+      <DependentUpon>graamaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet14.xss">
+      <DependentUpon>graamaDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet15.xsc">
+      <DependentUpon>graamaDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet15.xss">
+      <DependentUpon>graamaDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet16.xsc">
+      <DependentUpon>graamaDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet16.xss">
+      <DependentUpon>graamaDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet17.xsc">
+      <DependentUpon>graamaDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet17.xss">
+      <DependentUpon>graamaDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet18.xsc">
+      <DependentUpon>graamaDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet18.xss">
+      <DependentUpon>graamaDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet19.xsc">
+      <DependentUpon>graamaDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet19.xss">
+      <DependentUpon>graamaDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet2.xsc">
+      <DependentUpon>graamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet2.xss">
+      <DependentUpon>graamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet20.xsc">
+      <DependentUpon>graamaDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet20.xss">
+      <DependentUpon>graamaDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet21.xsc">
+      <DependentUpon>graamaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet21.xss">
+      <DependentUpon>graamaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet22.xsc">
+      <DependentUpon>graamaDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet22.xss">
+      <DependentUpon>graamaDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet23.xsc">
+      <DependentUpon>graamaDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet23.xss">
+      <DependentUpon>graamaDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet3.xsc">
+      <DependentUpon>graamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet3.xss">
+      <DependentUpon>graamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet4.xsc">
+      <DependentUpon>graamaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet4.xss">
+      <DependentUpon>graamaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet5.xsc">
+      <DependentUpon>graamaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet5.xss">
+      <DependentUpon>graamaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet6.xsc">
+      <DependentUpon>graamaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet6.xss">
+      <DependentUpon>graamaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet7.xsc">
+      <DependentUpon>graamaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet7.xss">
+      <DependentUpon>graamaDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet8.xsc">
+      <DependentUpon>graamaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet8.xss">
+      <DependentUpon>graamaDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet9.xsc">
+      <DependentUpon>graamaDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="graamaDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>graamaDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="graamaDataSet9.xss">
+      <DependentUpon>graamaDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
